@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { SelectColor } from "./components/SelectColor";
+import { SelectPackage } from "./components/SelectPackage";
+import { SelectPower } from "./components/SelectPower";
+import { SelectWarpDrive } from "./components/SelectWarpDrive";
+import { PriceCalculator } from "./components/PriceCalculator";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="content-container">
+      <div className="app-container">
+        <h1 className="page-title">Spaceship configurator</h1>
+        <div className="configurator-container">
+          <div className="parts-container">
+            <SelectColor />
+            <SelectPower />
+            <SelectWarpDrive />
+            <SelectPackage />
+          </div>
+          <PriceCalculator />
+        </div>
+      </div>
     </div>
   );
 }

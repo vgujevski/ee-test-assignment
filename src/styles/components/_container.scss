@@ -1,0 +1,14 @@
+.app-container {
+  max-width: 944px;
+  margin-top: 32px;
+  border: 1px solid $color-main;
+  border-radius: $border-radius;
+}
+
+.configurator-container {
+  display: flex;
+  flex-direction: row;
+  margin: 32px;
+  margin-top: 45px;
+  justify-content: space-between;
+}
